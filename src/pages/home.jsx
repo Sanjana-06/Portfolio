@@ -24,7 +24,7 @@ export default function Home() {
       });
     }, 100);
 
-    return () => clearInterval(intervalRef.current); // Cleanup on unmount
+    return () => clearInterval(intervalRef.current); 
   }, []);
 
   function isValidEmail(email) {
@@ -34,7 +34,7 @@ export default function Home() {
   }
 
   return (
-    <div className="relative bg-gradient-to-br from-gray-900 to-black text-white font-sans">
+    <div className="relative bg-gradient-to-br from-gray-900 to-black text-white font-montserrat">
       {/* Navbar Component */}
       <Navbar />
       
@@ -50,27 +50,15 @@ export default function Home() {
       </video>
       
       {/* Hero Section */}
-      <section className="mt-12 flex items-center justify-center h-screen px-6 text-center relative z-10" id="home">
+      <section className="mt-0 flex items-center justify-center h-screen px-6 text-center relative z-10" id="home">
         <div>
           {/* ✨ Typing Animation */}
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-4">
+          <h2 className="text-4xl md:text-4xl font-extrabold mb-4">
             {text}
             <span className="animate-pulse">|</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-300 mb-6">A Passionate Full Stack Developer</p>
-          {/* Experience Section */}
-          <div className="text-lg md:text-2xl text-gray-300 mb-6">
-            {/* First Line */}
-            <div className="flex justify-center gap-4 mb-2">
-              <p>SDE Intern @FIS |</p>
-              <p>Ex - SDE Intern @Schneider Electric</p>
-            </div>
-            {/* Second Line */}
-            <div className="flex justify-center gap-4">
-              <p>Ex - SDE Intern @Alstom |</p>
-              <p>Ex - SDE Intern @Orom Corp</p>
-            </div>
-          </div>
+          
           <div className="flex justify-center gap-4">
             <a
               href="#contact"
@@ -126,7 +114,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="relative z-10 px-6 py-20 text-white">
         <div className="flex items-center mb-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-left mr-4 ml-10">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-left mr-4 ml-10">About Me</h2>
         </div>
         <div className="text-justify ml-10 mr-10">
         <p className="text-lg md:text-xl w-full text-justify mb-6">
@@ -144,7 +132,7 @@ export default function Home() {
 
       <section id="skills" className="relative z-10 px-6 py-20 text-white">
         <div className="flex items-center mb-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-left mr-4 ml-10 mb-10">Technical Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-left mr-4 ml-10 mb-10">Technical Skills</h2>
         </div>
 
         <div className="space-y-12">
@@ -208,13 +196,13 @@ export default function Home() {
       {/* Experience Section */}
         <section id="experience" className="relative z-10 px-6 py-20 text-white">
           <div className="flex items-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold text-left ml-10">Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-left ml-10">Experience</h2>
           </div>
 
           <div className="flex flex-wrap justify-center gap-18 mx-10">
             {/* FIS Card */}
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-6 w-full md:w-110 h-70 hover:scale-105 transition-transform">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="bg-white/15 backdrop-blur-lg rounded-2xl shadow-lg p-6 w-full sm:w-[90%] md:w-[50%] lg:w-[35%] hover:scale-105 transition-transform">
+            <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/fis.jpg" alt="FIS Logo" className="w-14 h-14" />
                 <div>
                   <h3 className="text-l font-semibold  text-cyan-400">FIS-Fidelity National Information Service</h3>
@@ -230,8 +218,8 @@ export default function Home() {
             </div>
 
             {/* Schneider Electric Card */}
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-6 w-full md:w-110 h-70 hover:scale-105 transition-transform">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="bg-white/15 backdrop-blur-lg rounded-2xl shadow-lg p-6 w-full sm:w-[90%] md:w-[50%] lg:w-[35%] hover:scale-105 transition-transform">
+            <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/schneider.jpg" alt="Schneider Logo" className="w-12 h-12" />
                 <div>
                   <h3 className="text-l font-semibold  text-cyan-400">Schneider Electric</h3>
@@ -248,8 +236,8 @@ export default function Home() {
             </div>
 
             {/* Alstom Card */}
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-6 w-full md:w-110 h-70 hover:scale-105 transition-transform">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="bg-white/15 backdrop-blur-lg rounded-2xl shadow-lg p-6 w-full sm:w-[90%] md:w-[50%] lg:w-[35%] hover:scale-105 transition-transform">
+            <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/alstom.jpg" alt="Alstom Logo" className="w-14 h-14" />
                 <div>
                   <h3 className="text-l font-semibold  text-cyan-400">Alstom</h3>
@@ -264,8 +252,8 @@ export default function Home() {
             </div>
 
             {/* Orom Corp Card */}
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-6 w-full md:w-110 h-70 hover:scale-105 transition-transform">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="bg-white/15 backdrop-blur-lg rounded-2xl shadow-lg p-6 w-full sm:w-[90%] md:w-[50%] lg:w-[35%] hover:scale-105 transition-transform">
+            <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/orom.jpg" alt="Orom Corp Logo" className="w-12 h-12" />
                 <div>
                   <h3 className="text-l font-semibold text-cyan-400">Orom Corp</h3>
@@ -285,12 +273,12 @@ export default function Home() {
         {/* Projects Section */}
         <section id="projects" className="relative z-10 px-6 py-20 text-white">
           <div className="flex items-center mb-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-left mr-4 ml-10 mb-10">Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-left mr-4 ml-10 mb-10">Projects</h2>
           </div>
 
           <div className="flex flex-wrap justify-center gap-8 px-10">
             {/* Project 1: FinSage */}
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-6 w-full md:w-96 transform hover:scale-105 transition-transform">
+            <div className="bg-white/15 backdrop-blur-lg rounded-2xl shadow-lg p-6 w-full md:w-96 transform hover:scale-105 transition-transform">
               <h3 className="text-2xl font-semibold mb-2 text-cyan-400">FinSage</h3>
               <p className="text-sm mb-4 text-gray-300">
               Your intelligent financial assistant powered by AI, providing personalized investment recommendations and real-time insights for beginners and salaried professionals.
@@ -307,7 +295,7 @@ export default function Home() {
             </div>
 
             {/* Project 2: VNV Overflow */}
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-6 w-full md:w-96 transform hover:scale-105 transition-transform">
+            <div className="bg-white/15 backdrop-blur-lg rounded-2xl shadow-lg p-6 w-full md:w-96 transform hover:scale-105 transition-transform">
               <h3 className="text-2xl font-semibold mb-2 text-cyan-400">VNV Overflow</h3>
               <p className="text-sm mb-4 text-gray-300">
               A collaborative Q&A platform for technical queries, enabling users to ask questions, share expertise, and find solutions, inspired by the Stack Overflow community model.
@@ -346,20 +334,20 @@ export default function Home() {
               type="name"
               name="name"
               placeholder="Enter your name"
-              className="w-full p-3 rounded-md bg-gray-800 text-white placeholder-white"
+              className="w-full p-3 rounded-md bg-white/15 backdrop-blur-lg text-white placeholder-white"
               required
             />
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="w-full p-3 rounded-md bg-gray-800 text-white placeholder-white"
+              className="w-full p-3 rounded-md bg-white/15 backdrop-blur-lg text-white placeholder-white"
               required
             />
             <textarea
               name="message"
               placeholder="Enter your message"
-              className="w-full p-3 rounded-md bg-gray-800 text-white placeholder-white"
+              className="w-full p-3 rounded-md bg-white/15 backdrop-blur-lg text-white placeholder-white"
               rows="5"
               required
             ></textarea>
