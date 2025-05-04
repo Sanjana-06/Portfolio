@@ -130,10 +130,10 @@ export default function Home() {
         </div>
         <div className="text-justify ml-10 mr-10">
         <p className="text-lg md:text-xl w-full text-justify mb-6">
-          I am a passionate and detail-oriented Software Developer with hands-on experience in backend development, cloud technologies, and automation. Through internships at FIS, Schneider Electric, Alstom, and Orom, I have worked on real-world projects involving APIs, DevOps workflows, data integration, and cloud-based solutions. I enjoy solving complex problems, streamlining processes, and continuously learning new technologies. My expertise in AWS, Docker, and backend systems has enabled me to contribute effectively to team goals, optimize workflows, and improve the efficiency of development processes.
+          I am a passionate Software Developer with hands-on experience in backend development, cloud technologies, and automation. Through internships at FIS, Schneider Electric, Alstom, and Orom, I have worked on real-world projects involving APIs, DevOps workflows, data integration, and cloud-based solutions. I enjoy solving complex problems, streamlining processes, and continuously learning new technologies. My strong foundations in AWS, Docker, and backend systems has enabled me to contribute effectively to team goals, optimize workflows, and improve the efficiency of development processes.
         </p>
         <p className="text-lg md:text-xl w-full text-justify">
-          Currently, I am focused on growing my skills as a DevOps Engineer, aiming to drive efficient, scalable solutions. I have developed and deployed key software solutions, including automation scripts, API enhancements, and data visualization tools. With a solid foundation in backend development and cloud technologies, I am dedicated to improving processes and building innovative systems. My goal is to leverage my skills and experience to contribute to impactful projects that push the boundaries of technology.
+          Currently, I am focused on growing my skills as a DevOps Engineer, aiming to drive efficient, scalable solutions. I have developed key software solutions, including automation scripts, API enhancements, and data visualization tools. With a solid foundation in backend development and cloud technologies, I am dedicated to improving processes and building innovative systems. My goal is to leverage my skills and experience to contribute to impactful projects that push the boundaries of technology.
         </p>
         </div>
         
@@ -217,14 +217,15 @@ export default function Home() {
               <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/fis.jpg" alt="FIS Logo" className="w-14 h-14" />
                 <div>
-                  <h3 className="text-xl font-semibold  text-cyan-400">FIS - Fidelity National Information Services</h3>
+                  <h3 className="text-l font-semibold  text-cyan-400">FIS-Fidelity National Information Service</h3>
                   <p className="text-sm text-gray-400">Jan 2025 - Present · Chennai, TN</p>
                 </div>
               </div>
               <ul className="list-disc list-inside text-sm text-white space-y-2 text-justify">
-                <li>Developed an internal chatbot using Google FLAN-T5 and Sentence Transformers.</li>
-                <li>Automated multi-step workflows using Bitbucket scripts for commits and PRs.</li>
-                <li>Streamlined validation and script-based integration across modules.</li>
+                <li>Contributed to fulfilling client requests by deploying specific APIs based on business requirements.</li>
+                <li>Automated a multi-step task by integrating functionalities, validating scripts, and streamlining Bitbucket
+                operations through scripted processes.</li>
+                <li>Developed an internal chatbot using Google FLAN-T5 and Sentence Transformers to assist client queries.</li>
               </ul>
             </div>
 
@@ -233,7 +234,7 @@ export default function Home() {
               <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/schneider.jpg" alt="Schneider Logo" className="w-12 h-12" />
                 <div>
-                  <h3 className="text-xl font-semibold  text-cyan-400">Schneider Electric</h3>
+                  <h3 className="text-l font-semibold  text-cyan-400">Schneider Electric</h3>
                   <p className="text-sm text-gray-400">Aug 2024 - Dec 2024 · Bengaluru, KA</p>
                 </div>
               </div>
@@ -251,14 +252,14 @@ export default function Home() {
               <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/alstom.jpg" alt="Alstom Logo" className="w-14 h-14" />
                 <div>
-                  <h3 className="text-xl font-semibold  text-cyan-400">Alstom</h3>
+                  <h3 className="text-l font-semibold  text-cyan-400">Alstom</h3>
                   <p className="text-sm text-gray-400">May 2024 - Jul 2024 · Bangalore, KA</p>
                 </div>
               </div>
               <ul className="list-disc list-inside text-sm text-white space-y-2 text-justify">
-                <li>Integrated PostgreSQL with C# for efficient management and manipulation of JSON data.</li>
+                <li>Assisted in the development of a collaborative Q&A platform enabling users to ask and answer technical queries.</li>
+                <li>Contributed to the backend development by setting up RESTful APIs, implementing user authentication, and managing PostgreSQL database connections.</li>
                 <li>Created comprehensive project documentation to enhance clarity, tracking, and communication across teams.</li>
-                <li>Enhanced user experience by redesigning key interface elements and creating a new logo, demonstrating creativity.</li>
               </ul>
             </div>
 
@@ -267,7 +268,7 @@ export default function Home() {
               <div className="flex items-center gap-4 mb-4">
                 <img src="/assets/orom.jpg" alt="Orom Corp Logo" className="w-12 h-12" />
                 <div>
-                  <h3 className="text-xl font-semibold text-cyan-400">Orom Corp</h3>
+                  <h3 className="text-l font-semibold text-cyan-400">Orom Corp</h3>
                   <p className="text-sm text-gray-400">Jan 2024 - Apr 2024 · Vellore, TN</p>
                 </div>
               </div>
@@ -341,6 +342,13 @@ export default function Home() {
             }}
             className="space-y-4"
           >
+            <input
+              type="name"
+              name="name"
+              placeholder="Enter your name"
+              className="w-full p-3 rounded-md bg-gray-800 text-white placeholder-white"
+              required
+            />
             <input
               type="email"
               name="email"
